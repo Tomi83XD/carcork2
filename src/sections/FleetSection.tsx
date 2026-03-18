@@ -2,16 +2,16 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Star, Wind, Usb, Snowflake } from 'lucide-react';
 
-// Importa tus fotos acá (asegurate de que el path sea correcto)
-// import bus1 from '../assets/bus1.jpg';
-// import bus2 from '../assets/bus2.jpg';
-// import bus3 from '../assets/bus3.jpg';
+// 1. IMPORTAMOS LAS IMÁGENES COMO VARIABLES ACÁ ARRIBA
+import colectivo1 from '../assets/colectivo1.jpeg';
+import colectivo3 from '../assets/colectivo3.jpeg';
+import asientos from '../assets/asientos.jpeg';
 
 const fleet = [
   {
     id: 1,
     type: 'Semi Cama',
-    image: '../assets/colectivo1.jpeg', // Cambiá esto por bus1 si lo importás arriba
+    image: colectivo1, // 2. USAMOS LA VARIABLE SIN COMILLAS
     features: [
       { icon: Star, label: 'Asientos reclinables' },
       { icon: Wind, label: 'Aire acondicionado' },
@@ -22,7 +22,7 @@ const fleet = [
   {
     id: 2,
     type: 'Diferencial',
-    image: '../assets/colectivo3.jpeg', // Cambiá por bus2
+    image: colectivo3, // 2. USAMOS LA VARIABLE SIN COMILLAS
     features: [
       { icon: Star, label: 'Asientos ergonómicos' },
       { icon: Wind, label: 'Climatización' },
@@ -33,7 +33,7 @@ const fleet = [
   {
     id: 3,
     type: 'Ejecutivo',
-    image: '../assets/asientos.jpeg', // Cambiá por bus3
+    image: asientos, // 2. USAMOS LA VARIABLE SIN COMILLAS
     features: [
       { icon: Star, label: 'Asientos de cuero' },
       { icon: Wind, label: 'Aire acondicionado' },
